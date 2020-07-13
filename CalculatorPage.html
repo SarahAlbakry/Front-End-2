@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Caluculator</title>
+    <link href="StyleCss.css" rel="stylesheet" />
+</head>
+<body>
+    <table>
+        <!-- this is section header -->
+        <tr>
+            <td>
+                <input type="text" placeholder="0" readonly id="input" />
+                <input type="text" readonly id="result" />
+            </td>
+        </tr>
+        <!-- this is section calcu -->
+        <tr>
+            <td>
+                <input type="button" value="7" onclick="getNum(7)" />
+                <input type="button" value="8" onclick="getNum(8)" />
+                <input type="button" value="9" onclick="getNum(9)" />
+                <input type="button" value=" &#247 " onclick="opertion('/')" />
+                <br />
+                <input type="button" value="4" onclick="getNum(4)" />
+                <input type="button" value="5" onclick="getNum(5)" />
+                <input type="button" value="6" onclick="getNum(6)" />
+                <input type="button" value="X" onclick="opertion('X')" />
+                <br />
+                <input type="button" value="1" onclick="getNum(1)" />
+                <input type="button" value="2" onclick="getNum(2)" />
+                <input type="button" value="3" onclick="getNum(3)" />
+                <input type="button" value="-" onclick="opertion('-')" />
+                <br />
+                <input type="button" value="CE" onclick="clearInput()" />
+                <input type="button" value="0" onclick="getNum(0)" />
+                <input type="button" value="=" onclick="compute()" />
+                <input type="button" value="+" onclick="opertion('+')" />
+            </td>
+        </tr>
+
+    </table>
+    <script src="JavaScr.js"></script>
+</body>
+</html>
